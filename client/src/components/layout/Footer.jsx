@@ -49,32 +49,7 @@ const Footer = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             {t('footer.description')}
                         </p>
-                        <div className="flex space-x-3">
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:bg-primary/20 transition-colors group"
-                            >
-                                <Send className="w-4 h-4 text-gray-400 group-hover:text-accent" />
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:bg-primary/20 transition-colors group"
-                            >
-                                {/* <Instagram className="w-4 h-4 text-gray-400 group-hover:text-accent" /> */}
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:bg-primary/20 transition-colors group"
-                            >
-                                {/* <Facebook className="w-4 h-4 text-gray-400 group-hover:text-accent" /> */}
-                            </a>
-                            <a
-                                href="#"
-                                className="w-10 h-10 rounded-lg glass flex items-center justify-center hover:bg-primary/20 transition-colors group"
-                            >
-                                {/* <Twitter className="w-4 h-4 text-gray-400 group-hover:text-accent" /> */}
-                            </a>
-                        </div>
+                       
                     </motion.div>
 
                     {/* Quick Links */}
@@ -118,19 +93,19 @@ const Footer = () => {
                             <li className="flex items-start space-x-3">
                                 <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                                 <div>
-                                    <p className="text-gray-400 text-sm">info@log.site</p>
+                                    <p className="text-gray-400 text-sm">uzbrm95@gmail.com</p>
                                 </div>
                             </li>
                             <li className="flex items-start space-x-3">
                                 <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                                 <div>
-                                    <p className="text-gray-400 text-sm">+998 90 123 45 67</p>
+                                    <p className="text-gray-400 text-sm">+998 70 474 73 50</p>
                                 </div>
                             </li>
                             <li className="flex items-start space-x-3">
                                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                                 <div>
-                                    <p className="text-gray-400 text-sm">Toshkent, O'zbekiston</p>
+                                    <p className="text-gray-400 text-sm">Buxoro, O'zbekiston</p>
                                 </div>
                             </li>
                         </ul>

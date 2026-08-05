@@ -62,7 +62,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2 group">
                         <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                            <span className="text-white font-bold text-xl">L</span>
+                            <img src="./public/image.png" alt="Log.Site Logo" className="w-full h-full object-cover rounded-[50%]" />
                         </div>
                         <span className="text-2xl font-bold gradient-text">Log.Site</span>
                     </Link>

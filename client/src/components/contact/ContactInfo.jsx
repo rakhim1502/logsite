@@ -6,22 +6,22 @@ const ContactInfo = () => {
         {
             icon: Phone,
             label: 'Telefon',
-            value: '+998 90 123 45 67',
+            value: '+998 70 474 73 50',
             link: 'tel:+998901234567',
             color: 'from-primary to-blue-500'
         },
         {
             icon: Mail,
             label: 'Email',
-            value: 'info@log.site',
-            link: 'mailto:info@log.site',
+            value: 'uzbrm95@gmail.com',
+            link: 'mailto:uzbrm95@gmail.com',
             color: 'from-accent to-cyan-500'
         },
         {
             icon: MapPin,
             label: 'Manzil',
-            value: 'Toshkent, O\'zbekiston',
-            link: 'https://maps.google.com/?q=Tashkent,Uzbekistan',
+            value: 'Buxoro, O\'zbekiston',
+            link: 'https://maps.app.goo.gl/bUqZ5DyMrLcuHi4AA',
             color: 'from-success to-emerald-500'
         },
         {
@@ -37,13 +37,13 @@ const ContactInfo = () => {
         {
             icon: MessageCircle, // Telegram
             label: 'Telegram',
-            link: 'https://t.me/logsite',
+            link: 'https://t.me/r_15_02',
             color: 'from-blue-400 to-blue-600'
         },
         {
             icon: Camera, // Instagram
             label: 'Instagram',
-            link: 'https://instagram.com/logsite',
+            link: 'https://instagram.com/log.site',
             color: 'from-pink-500 to-purple-600'
         },
         {
@@ -127,7 +127,7 @@ const ContactInfo = () => {
             {/* Google Map */}
             <div className="glass rounded-2xl overflow-hidden">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.508737135979!2d69.2793893154!3d41.3110829792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0b5a8b6b7f%3A0x7b5e6e8b5e8b5e8b!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.508737135979!2d69.2793893154!3d41.3110829792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0b5a8b6b7f%3A0x7b5e6e8b5e8b5e8b!2sBukhara%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1234567890"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
