@@ -28,7 +28,13 @@ const PortfolioCard = ({ project, index }) => {
                 <div className="relative h-64 overflow-hidden">
                     {/* Image */}
                     <img
-                        src={project.imagePath || `https://via.placeholder.com/800x600/0F172A/2563EB?text=${project.title}`}
+                        src={
+                            project.imagePath
+                                ? project.imagePath.startsWith('http')
+                                    ? project.imagePath
+                                    : `${import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000'}${project.imagePath}`
+                                : `https://via.placeholder.com/800x600/0F172A/2563EB?text=${encodeURIComponent(project.title)}`
+                        }
                         alt={project.title}
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -36,7 +42,7 @@ const PortfolioCard = ({ project, index }) => {
 
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                    
+
                     {/* ✅ Kategoriya belgisi olib tashlandi */}
                 </div>
 
