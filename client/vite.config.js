@@ -28,12 +28,26 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-motion': ['framer-motion'],
-          'vendor-forms': ['react-hook-form'],
-          'vendor-utils': ['axios', 'lucide-react'],
-        },
+        manualChunks(id) {
+          // Faqat node_modules ichidagi fayllarni guruhlaymiz
+          if (id.includes('node_modules')) {
+            if (id.includes('/react/') || id.includes('/react-dom/') || id.includes('/react-router-dom/')) {
+              return 'vendor-react';
+            }
+            if (id.includes('/framer-motion/')) {
+              return 'vendor-motion';
+            }
+            if (id.includes('/react-hook-form/')) {
+              return 'vendor-forms';
+            }
+            if (id.includes('/axios/') || id.includes('/lucide-react/')) {
+              return 'vendor-utils';
+            }
+
+            // Qolgan barcha kutubxonalar uchun umumiy chunk (ixtiyoriy)
+            return 'vendor-other';
+          }
+        }
       },
     },
     chunkSizeWarningLimit: 1000,
