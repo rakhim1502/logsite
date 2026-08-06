@@ -178,17 +178,17 @@ const AboutPage = () => {
 
                                     <div className="relative z-10 space-y-6">
                                         <div className="text-center">
-                                            <div className="text-6xl font-bold gradient-text mb-2">15+</div>
+                                            <div className="text-6xl font-bold gradient-text mb-2">3+</div>
                                             <div className="text-gray-400">Yillik tajriba</div>
                                         </div>
 
                                         <div className="grid grid-cols-2 gap-6">
                                             <div className="text-center">
-                                                <div className="text-4xl font-bold text-white mb-1">50+</div>
+                                                <div className="text-4xl font-bold text-white mb-1">10+</div>
                                                 <div className="text-sm text-gray-400">Loyihalar</div>
                                             </div>
                                             <div className="text-center">
-                                                <div className="text-4xl font-bold text-white mb-1">30+</div>
+                                                <div className="text-4xl font-bold text-white mb-1">7+</div>
                                                 <div className="text-sm text-gray-400">Mijozlar</div>
                                             </div>
                                             <div className="text-center">
